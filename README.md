@@ -77,7 +77,10 @@ cd Portalyx/backend
 
 ```bash
 python -m venv venv
+
+#Activate:
 source venv/bin/activate  # Linux / Mac
+venv\Scripts\activate # Window
 ```
 
 ### 3. Install Dependencies
