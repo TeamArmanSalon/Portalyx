@@ -69,7 +69,7 @@ Portalyx follows a structured and modular architecture:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Portalyx.git
+git clone https://github.com/TeamArmanSalon/Portalyx.git
 cd Portalyx/backend
 ```
 
