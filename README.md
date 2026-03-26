@@ -2,7 +2,7 @@
 
 ## Overview
 
-Portalyx is a web-based student portal system designed to streamline academic processes and improve communication between students, faculty, administrators, and registrars. The system provides role-based access to ensure that each user interacts only with the features relevant to their responsibilities.
+Portalyx is a web-based portal designed for educational institutions to manage academic processes and facilitate communication within the school environment. It provides a centralized system where students, faculty, administrators, and registrars can efficiently access and manage information relevant to their roles.
 
 ---
 
@@ -14,6 +14,38 @@ The purpose of Portalyx is to:
 * Provide secure and organized access for different user roles
 * Simplify workflows such as enrollment, grading, and user management
 * Improve efficiency and transparency in academic operations
+
+---
+
+## System Roles
+
+### Student
+
+* Access personal dashboard
+* View profile and academic-related information
+* Interact with enrolled subjects and records
+* ...
+
+### Faculty
+
+* Manage classes and assigned subjects
+* Handle student grading and academic evaluation
+* Access teaching-related data
+* ...
+
+### Admin
+
+* Manage users across the system
+* Oversee system operations and configurations
+* Access reports and administrative tools
+* ...
+
+### Registrar
+
+* Handle student enrollment processes
+* Manage academic records and documentation
+* Generate institutional reports
+* ...
 
 ---
 
@@ -32,21 +64,57 @@ Portalyx follows a structured and modular architecture:
 
 ---
 
-## Backend Structure
+## How to Run the Project
 
-The backend is organized into clear layers:
+### 1. Clone the Repository
 
-* **Routes:**
-  Handle incoming HTTP requests and define API endpoints
+```bash
+git clone https://github.com/YOUR_USERNAME/Portalyx.git
+cd Portalyx/backend
+```
 
-* **Services:**
-  Contain the business logic for each module (auth, student, faculty, admin, registrar)
+### 2. Create Virtual Environment (Optional but Recommended)
 
-* **Models (Planned):**
-  Define database structure and interactions
+```bash
+python -m venv venv
+source venv/bin/activate  # Linux / Mac
+```
 
-* **Utils (Planned):**
-  Provide helper functions such as validation and database connection
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Set Environment Variables
+
+Create a `.env` file in the backend folder:
+
+```env
+SECRET_KEY=your-secret-key
+```
+
+### 5. Run the Server
+
+```bash
+python portalyx_app.py
+```
+
+### 6. Access the API
+
+Open your browser or Postman:
+
+```
+http://localhost:5555/
+```
+
+Example endpoints:
+
+* `/api/auth`
+* `/api/student`
+* `/api/admin`
+* `/api/faculty`
+* `/api/registrar`
 
 ---
 
